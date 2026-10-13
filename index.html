@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NK Store — Japanese skincare, Kigali</title>
+<meta name="description" content="Authentic Japanese and Korean skincare, chosen for Black skin and delivered in Kigali. NK Store — @nk.store_kgl.">
+<meta property="og:title" content="NK Store">
+<meta property="og:description" content="Authentic Japanese and Korean skincare, chosen for Black skin and delivered in Kigali.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@200;300;400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=20261013-4">
+</head>
+<body>
+
+<div id="prog"></div>
+
+<div class="announce"><div class="announce-track" id="announce" aria-hidden="true"></div></div>
+
+<header class="nav" id="nav">
+  <div class="col nav-in">
+    <button class="ico burger" id="burger" type="button" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a class="brand" href="#home"><span class="nk">NK</span><span class="sub">Store</span></a>
+    <nav class="nav-links" id="navLinks"></nav>
+    <div class="icons">
+      <div class="langsw" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="rw" aria-pressed="false">RW</button>
+      </div>
+      <button class="ico" id="openSearch" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      </button>
+      <button class="ico" id="openAcct" type="button" aria-label="Account">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg>
+      </button>
+      <button class="ico" id="openBag" type="button" aria-label="Bag">
+        <svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="badge" id="bagCount" data-n="0">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="view"></main>
+
+<footer class="foot">
+  <div class="col">
+    <div class="fbig">NK</div>
+    <div class="fgrid" id="fgrid"></div>
+    <div class="fnote">
+      <span>© 2026 NK Store · Kigali, Rwanda</span>
+      <span id="fdemo"></span>
+    </div>
+  </div>
+</footer>
+
+<div id="scrim"></div>
+
+<aside id="bag" aria-label="Bag">
+  <div class="bhead"><h3 id="bagTitle"></h3>
+    <button class="ico" id="closeBag" type="button" aria-label="Close"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="bbody" id="bagBody"></div>
+  <div class="bfoot" id="bagFoot" hidden>
+    <div><div class="freebar"><i id="freeBar" style="width:0%"></i></div><p class="small" id="freeMsg" style="margin-top:7px"></p></div>
+    <div class="sumline"><span id="subLabel"></span><b id="subVal">0 Frw</b></div>
+    <button class="btn btn-wide" id="checkout" type="button"></button>
+    <button class="btn btn-line btn-wide btn-sm" id="keepShopping" type="button"></button>
+    <div id="orderBox" hidden>
+      <textarea id="orderText" readonly aria-label="Order summary"></textarea>
+      <button class="btn btn-line btn-wide btn-sm" id="copyOrder" type="button"></button>
+      <p class="small" id="waNote"></p>
+    </div>
+  </div>
+</aside>
+
+<div id="search">
+  <div class="col">
+    <div class="sbar">
+      <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:none;stroke:var(--ink-3);stroke-width:1.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input id="sInput" type="search" autocomplete="off" spellcheck="false">
+      <button class="ico" id="closeSearch" type="button" aria-label="Close"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div id="sResults" style="padding-block:28px 60px"></div>
+  </div>
+</div>
+
+<div id="toast"><span id="toastMsg"></span></div>
+<div id="cursor"></div>
+
+<script src="assets/js/data.js?v=20261013-4"></script>
+<script src="assets/js/i18n.js?v=20261013-4"></script>
+<script src="assets/js/app.js?v=20261013-4"></script>
+</body>
+</html>
